@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Blog de Receitas</title>
+</head>
+<body>
+    <header>
+        <h1>Blog de Receitas</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Receitas</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <article class="recipe">
+            <img src="img/receita1.jpeg">
+            <h2>Macarronada Italiana</h2>
+            <p>Esta deliciosa macarronada é um prato reconfortante e simples de preparar...</p>
+            <a href="#" class="show-hide" onclick="toggleContent(this.parentElement)">Ver Receita Completa</a>
+            <div class="content" style="display: none;">
+                <p>Confira abaixo todos os detalhes para preparar esta receita incrível:</p>
+                <ul>
+                    <li>Lista de ingredientes</li>
+                    <li>Instruções passo a passo</li>
+                    <li>Dicas de culinária</li>
+                </ul>
+            </div>
+        </article>
+        
+        <article class="recipe">
+            <img src="img/receita2.jpeg">
+            <h2>Arroz</h2>
+            <p>Uma receita clássica de arroz que resulta em grãos soltos e macios...</p>
+            <a href="#" class="show-hide" onclick="toggleContent(this.parentElement)">Ver Receita Completa</a>
+            <div class="content" style="display: none;">
+                <p>Veja abaixo o passo a passo para preparar esse delicioso prato de arroz:</p>
+                <ul>
+                    <li>Ingredientes necessários</li>
+                    <li>Passos de preparo</li>
+                    <li>Sugestões de acompanhamento</li>
+                </ul>
+            </div>
+        </article>
+        
+        <!-- Mais artigos de receitas aqui -->
+    </main>
